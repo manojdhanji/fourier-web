@@ -1,0 +1,7 @@
+name: "Fourier-Web"
+services:
+  fourier:
+    build: .
+    container_name: fourier-app
+    ports:
+      - "8081:80"

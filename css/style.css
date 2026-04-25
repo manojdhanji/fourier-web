@@ -1,0 +1,175 @@
+/* ============================
+   GLOBAL STYLES
+   ============================ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #1b1b1b;
+    color: #e6e6e6;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* ============================
+   LEFT PANEL — CONTROLS
+   ============================ */
+#controls {
+    width: 280px;
+    background: #242424;
+    border-right: 1px solid #3a3a3a;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+#controls h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.control-group {
+    margin-bottom: 20px;
+}
+
+.control-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.control-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    background: #333;
+    color: #f0f0f0;
+    border: 1px solid #555;
+}
+
+/* ============================
+   BUTTON ROWS
+   ============================ */
+.button-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.button-row button {
+    flex: 1;
+}
+
+/* ============================
+   BUTTONS — BASE STYLE
+   ============================ */
+button {
+    cursor: pointer;
+    border: 1px solid #555;
+    background: #333;
+    color: #f0f0f0;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background 0.2s, border-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background: #444;
+    border-color: #777;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Accent buttons */
+#startBtn {
+    background: #4caf50;
+    border-color: #3e8e41;
+}
+#startBtn:hover {
+    background: #5ecf63;
+}
+
+#pauseBtn {
+    background: #f44336;
+    border-color: #c62828;
+}
+#pauseBtn:hover {
+    background: #ff5a4d;
+}
+
+#zoomInBtn,
+#zoomOutBtn {
+    background: #2196f3;
+    border-color: #1976d2;
+}
+#zoomInBtn:hover,
+#zoomOutBtn:hover {
+    background: #42a5f5;
+}
+
+#clearBtn {
+    background: #9c27b0;
+    border-color: #7b1fa2;
+}
+#clearBtn:hover {
+    background: #ba3bd1;
+}
+
+#resetBtn {
+    background: #757575;
+    border-color: #616161;
+}
+#resetBtn:hover {
+    background: #9e9e9e;
+}
+
+/* ============================
+   DETAILS (ABOUT BOX)
+   ============================ */
+#aboutBox {
+    margin-top: 20px;
+}
+
+#aboutBox summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 8px;
+    background: #e6e6e6;
+    color: #222;
+    border-radius: 4px;
+}
+
+#aboutBox .details-content {
+    background: #f5f5f5;
+    color: #222;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* ============================
+   RIGHT PANEL — CANVAS AREA
+   ============================ */
+#canvas-area {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background: #1b1b1b;
+}
+
+#fourierCanvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}

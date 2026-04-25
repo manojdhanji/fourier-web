@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fourier Series Demo</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!-- ============================
+         LEFT PANEL — UI CONTROLS
+         ============================ -->
+        <aside id="controls">
+            <h2>Fourier Controls</h2>
+            <p>Configure the visualization and press Start.</p>
+
+            <div class="control-group">
+                <label for="shapeSelect">Shape</label>
+                <select id="shapeSelect">
+                    <option value="heart">Heart</option>
+                    <option value="clover-3">3‑Leaf Clover</option>
+                    <option value="clover-4">4‑Leaf Clover</option>
+                    <option value="random">Random</option>
+                </select>
+            </div>
+
+            <!-- Start + Pause -->
+            <div class="button-row">
+                <button id="startBtn">Start</button>
+                <button id="pauseBtn">Pause</button>
+            </div>
+
+            <!-- Zoom + / Zoom - -->
+            <div class="button-row">
+                <button id="zoomInBtn">Zoom +</button>
+                <button id="zoomOutBtn">Zoom −</button>
+            </div>
+
+            <!-- Clear Trace + Reset -->
+            <div class="button-row">
+                <button id="clearBtn">Clear Trace</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+
+            <details id="aboutBox">
+                <summary>About Fourier Visualization</summary>
+                <div class="details-content">
+                    <p>
+                        This demo reconstructs shapes using rotating vectors derived from
+                        Discrete Fourier Transform coefficients.
+                    </p>
+                </div>
+            </details>
+        </aside>
+
+
+        <!-- ============================
+         RIGHT PANEL — CANVAS AREA
+         ============================ -->
+        <main id="canvas-area">
+            <canvas id="fourierCanvas"></canvas>
+        </main>
+
+    </div>
+
+    <!-- ============================
+     MODULE SCRIPTS
+     ============================ -->
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
