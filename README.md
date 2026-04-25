@@ -167,7 +167,7 @@ Used when the user selects Random.
 ```
 
 ```markdown
-*constants.js`
+*constants.js*
 
 #### Holds all configurable constants:
 
