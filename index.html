@@ -49,13 +49,52 @@
 
             <details id="aboutBox">
                 <summary>About Fourier Visualization</summary>
-                <div class="details-content">
+
+                <section class="details-content">
+                    <header>
+                        <h3>What This Demo Shows</h3>
+                    </header>
+
                     <p>
-                        This demo reconstructs shapes using rotating vectors derived from
-                        Discrete Fourier Transform coefficients.
+                        This visualization demonstrates how a complex shape can be reconstructed using a chain of
+                        rotating vectors. Each vector corresponds to a single Fourier coefficient, and together they
+                        trace out the curve over time.
                     </p>
-                </div>
+
+                    <article>
+                        <h4>How It Works</h4>
+                        <ul>
+                            <li>The shape is sampled as a sequence of complex numbers.</li>
+                            <li>A Discrete Fourier Transform extracts frequency components.</li>
+                            <li>Each component becomes a rotating vector with:
+                                <strong>magnitude</strong>, <strong>phase</strong>, and <strong>angular
+                                    velocity</strong>.
+                            </li>
+                            <li>The vectors are linked head‑to‑tail to form an epicycle chain.</li>
+                            <li>The endpoint of the final vector traces the reconstructed shape.</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h4>What You Can Do</h4>
+                        <p>Use the controls to:</p>
+                        <ol>
+                            <li>Select a predefined shape or generate a random one.</li>
+                            <li>Start, pause, or reset the animation.</li>
+                            <li>Zoom in and out to explore the vector chain.</li>
+                            <li>Clear the trace to observe the motion more clearly.</li>
+                        </ol>
+                    </article>
+
+                    <footer>
+                        <p>
+                            This demo is powered by a lightweight JavaScript engine that computes and animates
+                            Fourier epicycles in real time.
+                        </p>
+                    </footer>
+                </section>
             </details>
+
         </aside>
 
 

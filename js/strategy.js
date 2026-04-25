@@ -53,8 +53,8 @@ class SparseStrategy {
     }
 }
 export const strategies = [
-    //new OrganicStrategy(),
+    new OrganicStrategy(),
     new SmoothStrategy(),
-    //new SparseStrategy(0.2)
+    new SparseStrategy(0.2)
 ];
 

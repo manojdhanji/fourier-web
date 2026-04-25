@@ -95,6 +95,7 @@ button:active {
     background: #4caf50;
     border-color: #3e8e41;
 }
+
 #startBtn:hover {
     background: #5ecf63;
 }
@@ -103,6 +104,7 @@ button:active {
     background: #f44336;
     border-color: #c62828;
 }
+
 #pauseBtn:hover {
     background: #ff5a4d;
 }
@@ -112,6 +114,7 @@ button:active {
     background: #2196f3;
     border-color: #1976d2;
 }
+
 #zoomInBtn:hover,
 #zoomOutBtn:hover {
     background: #42a5f5;
@@ -121,6 +124,7 @@ button:active {
     background: #9c27b0;
     border-color: #7b1fa2;
 }
+
 #clearBtn:hover {
     background: #ba3bd1;
 }
@@ -129,33 +133,99 @@ button:active {
     background: #757575;
     border-color: #616161;
 }
+
 #resetBtn:hover {
     background: #9e9e9e;
 }
 
 /* ============================
-   DETAILS (ABOUT BOX)
+   DETAILS / INFO CARD
    ============================ */
+
 #aboutBox {
     margin-top: 20px;
 }
 
+/* Summary bar */
 #aboutBox summary {
     cursor: pointer;
     font-weight: bold;
-    padding: 8px;
+    padding: 10px 12px;
     background: #e6e6e6;
     color: #222;
-    border-radius: 4px;
-}
-
-#aboutBox .details-content {
-    background: #f5f5f5;
-    color: #222;
-    padding: 12px;
-    margin-top: 8px;
     border-radius: 6px;
     border: 1px solid #ccc;
+    list-style: none;
+}
+
+/* Remove default triangle and add custom */
+#aboutBox summary::-webkit-details-marker {
+    display: none;
+}
+
+#aboutBox summary::after {
+    content: "▸";
+    float: right;
+    transition: transform 0.2s ease;
+    color: #444;
+}
+
+#aboutBox[open] summary::after {
+    transform: rotate(90deg);
+}
+
+/* Card container */
+#aboutBox .details-content {
+    background: #fafafa;
+    color: #222;
+    padding: 20px 22px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    /* NEW typography improvements */
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#aboutBox .details-content p {
+    margin-bottom: 12px;
+}
+
+/* Section header */
+#aboutBox .details-content header h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #111;
+}
+
+/* Subsection titles */
+#aboutBox .details-content h4 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Lists */
+#aboutBox .details-content ul,
+#aboutBox .details-content ol {
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+#aboutBox .details-content li {
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+/* Footer */
+#aboutBox .details-content footer {
+    margin-top: 18px;
+    padding-top: 12px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    color: #555;
 }
 
 /* ============================

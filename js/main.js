@@ -20,7 +20,7 @@ function resizeCanvas() {
     dc.resize();
 }
 window.addEventListener("resize", resizeCanvas);
-resizeCanvas();
+window.addEventListener("load", resizeCanvas);
 
 // ======================================================
 // 2. Load Fourier JSON and build vector chain
@@ -67,10 +67,8 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-animate();
-
 // ======================================================
-// 4. UI Controls
+// 5. UI Controls
 // ======================================================
 
 document.getElementById("startBtn").addEventListener("click", () => {
@@ -119,3 +117,4 @@ document.getElementById("resetBtn").addEventListener("click", () => {
     document.getElementById("shapeSelect").value = "heart";
 });
 
+animate();
