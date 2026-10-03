@@ -27,7 +27,7 @@ window.addEventListener("load", resizeCanvas);
 // ======================================================
 
 async function loadShape(name) {
-    const response = await fetch(`/data/${name}.json`);
+    const response = await fetch(`./data/${name}.json`);
     const coeffs = await response.json();
     buildVectorsFromCoeffs(coeffs);
 }
