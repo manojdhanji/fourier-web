@@ -11,9 +11,9 @@ export const Constants = {
     GRID_SPACING: 50,
 
     // Vector drawing styles
-    VECTOR_COLOR: "#000000",
+    VECTOR_COLOR: "#00ffff",
     TRACE_COLOR: "#ff0000",
-    AXIS_COLOR: "#888888",
+    AXIS_COLOR: "#aaaaaa",
 
     // Line widths
     VECTOR_WIDTH: 2,
